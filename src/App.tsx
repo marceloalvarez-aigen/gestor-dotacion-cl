@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Docentes from './pages/Docentes';
 import Reportes from './pages/Reportes';
+import Funcionarios from './pages/Funcionarios';
 
 export default function App() {
   return (
