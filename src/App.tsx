@@ -24,6 +24,14 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+                    <Route
+            path="/funcionarios"
+            element={
+              <ProtectedRoute>
+                <Funcionarios />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/docentes"
             element={
