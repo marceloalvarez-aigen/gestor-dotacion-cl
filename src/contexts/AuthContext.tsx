@@ -22,8 +22,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [error, setError] = useState<string | null>(null);
 
   const demoCredentials = useMemo(
-    () => ({ email: 'admin@demo.cl', password: 'Demo2025' }),
-    []
+    () => ({ email: 'demo@gestor-dotacion.cl', password: 'Demo2024!' }),    []
   );
 
   const clearError = () => setError(null);
