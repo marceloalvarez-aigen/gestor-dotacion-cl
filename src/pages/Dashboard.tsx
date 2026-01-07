@@ -1,4 +1,4 @@
-import { LogOut, Users, FileText, BarChart3, Home } from 'lucide-react';
+import { LogOut, Users, BarChart3, Home } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
