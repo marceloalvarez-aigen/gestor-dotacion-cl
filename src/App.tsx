@@ -4,6 +4,8 @@ import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Docentes from './pages/Docentes';
+import Reportes from './pages/Reportes';
 
 export default function App() {
   return (
@@ -13,8 +15,8 @@ export default function App() {
           {/* Rutas públicas */}
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<Login />} />
-
-          {/* Ruta protegida */}
+          
+          {/* Rutas protegidas */}
           <Route
             path="/dashboard"
             element={
@@ -23,7 +25,23 @@ export default function App() {
               </ProtectedRoute>
             }
           />
-
+          <Route
+            path="/docentes"
+            element={
+              <ProtectedRoute>
+                <Docentes />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/reportes"
+            element={
+              <ProtectedRoute>
+                <Reportes />
+              </ProtectedRoute>
+            }
+          />
+          
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
